@@ -1,0 +1,176 @@
+.slider-for {
+  max-width: 1920px;
+  min-height: 624px;
+  margin: 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+.slider-for__item {
+  min-height: 624px;
+  position: relative;
+}
+
+.slick-active {
+  outline: none;
+}
+
+.slider-for__text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+
+  padding: 0;
+  margin: 0;
+  padding-top: 123px;
+  padding-left: 390px;
+}
+
+.slider-for__title {
+  font-family: "Montserrat-Medium", "OpenSans", sans-serif;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 63px;
+  color: #FFFFFF;
+
+  padding: 0;
+  margin: 0;
+  padding-left: 390px;
+  margin-top: 12px;
+}
+
+.slider-for__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 148%;
+  color: rgba(255, 255, 255, 0.8);
+
+  padding: 0;
+  margin: 0;
+  width: 555px;
+  padding-left: 390px;
+  margin-top: 24px;
+  margin-bottom: 54px;
+}
+
+.slider-for__buttons-wrapper {
+  padding-left: 390px;
+  display: flex;
+}
+
+.slider-for__button-two {
+  margin-left: 24px;
+}
+
+.slider-for__img {
+  position: absolute;
+  min-height: 624px;
+  z-index: -1;
+  bottom: 0;
+}
+
+.slider__wrapper {
+  width: 500px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 290px;
+}
+
+// slider nav
+
+.slider-nav__item {
+  position: relative;
+  width: 355px;
+  height: 245px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 205px;
+    width: 1px;
+    left: -40px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.slider-nav__title {
+  font-family: "Montserrat-Bold", "OpenSans", sans-serif;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 78px;
+  letter-spacing: 0.02em;
+  color: rgba(57, 125, 255, 0.3);
+
+  margin: 0;
+}
+
+.slider-nav__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.3);
+
+  width: 325px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.slider-nav {
+  .slick-active {
+    outline: none;
+
+    .slider-nav__description {
+      color: rgba(255, 255, 255, 0.7);
+      width: 282px;
+    }
+
+    .slider-nav__title {
+      color: #397DFF;
+    }
+
+    .slider-nav__item {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+//slider arrows
+
+.slider__arrows {
+  width: 105px;
+  display: flex;
+}
+
+.slider__arrow {
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill-opacity: 0.7;
+    }
+
+    circle {
+      fill-opacity: 0.5;
+    }
+  }
+
+  &:active {
+    path {
+      fill-opacity: 1;
+    }
+
+    circle {
+      fill: #397DFF;
+      fill-opacity: 1;
+    }
+  }
+}
+
+.my-arrow-next {
+  margin-left: 43px;
+  transform: rotate(180deg);
+}

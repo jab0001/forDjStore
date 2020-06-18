@@ -1,0 +1,54 @@
+.map {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: url("../../img/slogan.svg");
+    position: absolute;
+    width: 1382px;
+    height: 161px;
+    left: 289px;
+    top: 207px;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2740px;
+    height: 1255px;
+    top: 287px;
+    background: #0199ef;
+    border-radius: 2740px/1255px;
+    box-shadow: 0 0 220px rgba(131, 210, 255, 0.6);
+    left: -20%;
+    z-index: -1;
+  }
+}
+
+.map__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 142px;
+  width: 1685px;
+  height: 921px;
+
+  &::after {
+    content: url("../../img/train1.svg");
+    position: absolute;
+    bottom: -5px;
+    left: 713px;
+  }
+
+  &::before {
+    content: url("../../img/train2.svg");
+    position: absolute;
+    top: 196px;
+    right: 183px;
+  }
+}
+
+.map__stars {
+  position: absolute;
+  z-index: -2;
+}

@@ -1,0 +1,31 @@
+.button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: top;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: inherit;
+  border-radius: 8px;
+  width: 186px;
+  height: 48px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #ffffff;
+
+  &:hover {
+    color: grey;
+    border-color: grey;
+  }
+
+  &:active {
+    color: #ffffff;
+    background: #397DFF;
+    box-shadow: 0 6px 24px rgba(85, 104, 255, 0.12);
+    border: none;
+  }
+}
